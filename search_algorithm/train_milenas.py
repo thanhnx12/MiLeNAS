@@ -88,8 +88,7 @@ def main():
             project="automl-gradient-based-nas",
             name="r" + str(args.run_id) + "-e" + str(args.epochs) + "-lr" + str(args.learning_rate) + "-l(" +
                  str(args.lambda_train_regularizer) + "," + str(args.lambda_valid_regularizer) + ")",
-            config=args,
-            entity="automl"
+            config=args
         )
 
     global is_multi_gpu
